@@ -94,7 +94,7 @@ venues =['Eden Gardens','Wankhede Stadium','M Chinnaswamy Stadium','Feroz Shah K
 'Green Park'
 ]
 
-pipe = pickle.load(open('pipe.pkl','rb'))
+pipe = pickle.load(open('pipe2.pkl','rb'))
 
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
