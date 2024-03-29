@@ -10,7 +10,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 
-img = get_img_as_base64("/home/charan/python-ws/Ipl_prediction/background.jpeg")
+img = get_img_as_base64("background.jpeg")
 # data:image/png;base64,{img}
 page_bg_img = f"""
 <style>
@@ -94,7 +94,7 @@ venues =['Eden Gardens','Wankhede Stadium','M Chinnaswamy Stadium','Feroz Shah K
 'Green Park'
 ]
 
-pipe = pickle.load(open('/home/charan/python-ws/Ipl_prediction/pipe2.pkl','rb'))
+pipe = pickle.load(open('pipe.pkl','rb'))
 
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
